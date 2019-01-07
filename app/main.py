@@ -24,7 +24,7 @@ from airports import Airports
 app = Flask(__name__)
 airport_util = Airports()
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
@@ -53,6 +53,7 @@ def airportName():
         # print("print user email")
         # print(user_info['email'])
     else:
+        logger.error('user info not provided')
         print('user info not provided')
     """Given an airport IATA code, return that airport's name."""
     iata_code = request.args.get('iataCode')
