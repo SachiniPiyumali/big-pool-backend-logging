@@ -39,6 +39,7 @@ def _base64_decode(encoded_str):
 @app.route('/airportName', methods=['GET'])
 def airportName():
     logger.info('call the airport name api')
+    logger.debug('airportName_airportName_airportName_airportName')
     print('airportName_airportName_airportName_airportName')
     logger.debug('call the airport name api in debug mode')
     encoded_info = request.headers.get('X-Endpoint-API-UserInfo', None)
