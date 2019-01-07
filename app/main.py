@@ -53,8 +53,8 @@ def airportName():
         # print("print user email")
         # print(user_info['email'])
     else:
-        logger.error('user info not provided')
-        print('user info not provided')
+        logger.info('user info not provided')
+        # print('user info not provided')
     """Given an airport IATA code, return that airport's name."""
     iata_code = request.args.get('iataCode')
     if iata_code is None:
