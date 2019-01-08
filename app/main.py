@@ -40,10 +40,12 @@ def _base64_decode(encoded_str):
 def airportName():
     logger.info('call the airport name api')
     logger.debug('airportName_airportName_airportName_airportName')
+    logger.debug('print airport name')
     print('airportName_airportName_airportName_airportName')
     logger.debug('call the airport name api in debug mode')
     encoded_info = request.headers.get('X-Endpoint-API-UserInfo', None)
     custom_header = request.headers.get('custom', None)
+    logger.info(custom_header)
     print("print custom header")
     print(custom_header)
 
